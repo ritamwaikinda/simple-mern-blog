@@ -1,6 +1,6 @@
-import React from 'react';
-import { Container } from 'react-bootstrap';
+// import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { Container } from 'react-bootstrap';
 import Article from './components/articles/Article';
 import Articles from './components/articles/Articles';
 import ArticleForm from './components/articles/ArticleForm';
@@ -8,8 +8,7 @@ import ArticleForm from './components/articles/ArticleForm';
 
 const App = () => {
   return (
-    <div>
-      <BrowserRouter>
+         <BrowserRouter>
         <Container>
           <Switch>
             <Route path="/articles/new" component={ArticleForm} />
@@ -19,8 +18,7 @@ const App = () => {
           </Switch>
         </Container>
       </BrowserRouter>      
-    </div>
-  )
+  );
 }
 
-export default App
+export default App;
